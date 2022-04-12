@@ -5,18 +5,10 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('adminapp', '0001_initial'),
-    ]
+    dependencies = [("adminapp", "0001_initial")]
 
     operations = [
-        migrations.DeleteModel(
-            name='Contact',
-        ),
-        migrations.DeleteModel(
-            name='Product',
-        ),
-        migrations.DeleteModel(
-            name='ProductCategory',
-        ),
+        migrations.DeleteModel(name="Contact"),
+        migrations.DeleteModel(name="Product"),
+        migrations.DeleteModel(name="ProductCategory"),
     ]
