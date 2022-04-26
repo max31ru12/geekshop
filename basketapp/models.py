@@ -35,6 +35,5 @@ class Basket(models.Model):
         return Basket.objects.filter(user=user).order_by("product__category")
 
     @staticmethod
-        def get_item(pk):
-            return get_object_or_404(Basket, pk=pk)
-        
+    def get_item(pk):
+        return get_object_or_404(Basket, pk=pk)
